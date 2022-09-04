@@ -320,10 +320,39 @@ img {
   text-align: center;
 }
 .team-function {
+margin-bottom: 16px;
+
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
+
 }
+.team-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content:center;
+}
+.link-social {
+  display: block;
+  fill: var(--background-color-svg);
+  text-decoration: none;
+    padding: 12px;
+    background-color: transparent;
+    border-radius: 50%;
+    line-height: 0;
+}
+.link-social:hover,
+.link-social:focus {
+  fill: var(--color-text-hero);
+  background-color: var(--background-color-bt-accent);
+}
+
+.icon-social {
+width: 20px;
+height: 20px;
+}
+
 /*section client*/
 .client-title {
   margin-bottom: 50px;
