@@ -10,6 +10,7 @@
   --background-color-line: #ececec;
   --background-color-svg: #afb1b8;
   --background-color-social: rgba(255, 255, 255, 0.1);
+  --background-color-gradient:rgba(47, 48, 58, 0.4);
   /*text color*/
   --color-text-main: #757575;
   --color-text-topic: #212121;
@@ -145,6 +146,8 @@ img {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  
+
 
   text-decoration: none;
   color: var(--color-text-main);
@@ -156,6 +159,19 @@ img {
 .link-cont:focus {
   color: var(--color-text-accent);
 }
+.icon-cont-envelope{ 
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.icon-cont-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 /*footer*/
 .footer {
   background-color: var(--background-color-dark);
@@ -191,6 +207,9 @@ img {
 
 .hero {
   background-color: var(--background-color-dark);
+ background:linear-gradient( var(--background-color-gradient), var(--background-color-gradient) ), url(/./images/hero.jpg);
+background-position: center;
+
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -259,6 +278,18 @@ img {
 .advatage-text {
   line-height: calc(24 / 14);
 }
+.advantage-box {
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  background-color: var(--background-color-sect);
+  border-radius: 4px;
+}
+.advantage-icon {
+width: 70px;
+height: 70px;
+
+}
+
 
 /*section work*/
 
