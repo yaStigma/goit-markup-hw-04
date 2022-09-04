@@ -8,6 +8,8 @@
   --background-color-bt-accent: #2196f3;
   --background-color-bt-activ: #188ce8;
   --background-color-line: #ececec;
+  --background-color-svg: #afb1b8;
+  --background-color-social: rgba(255, 255, 255, 0.1);
   /*text color*/
   --color-text-main: #757575;
   --color-text-topic: #212121;
@@ -91,7 +93,6 @@ img {
 }
 .logo-white {
   color: var(--color-text-hero);
-
 }
 .accent-logo {
   color: var(--color-text-accent);
@@ -159,7 +160,7 @@ img {
 .footer {
   background-color: var(--background-color-dark);
   padding-top: 60px;
-  padding-bottom: 60px;  
+  padding-bottom: 60px;
 }
 
 .address {
@@ -194,9 +195,9 @@ img {
   padding-bottom: 200px;
 }
 .hero-cont {
-    padding-left: 252px;
+  padding-left: 252px;
   padding-right: 252px;
-  }
+}
 .hero-title {
   width: 696px;
   margin-bottom: 30px;
@@ -323,6 +324,47 @@ img {
   line-height: calc(19 / 16);
   text-align: center;
 }
+/*section client*/
+.client-title {
+  margin-bottom: 50px;
+
+  color: var(--color-text-topic);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.list-client {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.client-item {
+  width: 170px;
+  border: 1px solid var(--background-color-svg);
+  border-radius: 4px;
+}
+.client-item:hover,
+.client-item:focus {
+  border: 1px solid var(--background-color-bt-activ);
+}
+
+.link-client {
+  display: block;
+  fill: var(--background-color-svg);
+  padding: 16px 32px;
+  text-decoration: none;
+}
+.link-client:hover,
+.link-client:focus {
+  fill: var(--background-color-bt-accent);
+}
+.logo-client {
+  width: 106px;
+  height: 60px;
+}
+
 /*portfolio*/
 .filter {
   display: flex;
@@ -363,12 +405,18 @@ img {
   flex-wrap: wrap;
   gap: 30px;
 }
-.item-project {
 
+.item-project {
   width: 370px;
 }
+.item-project:hover,
+.item-project:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .proj-box {
- padding: 20px 24px;
+  padding: 20px 24px;
   border-left: 1px solid var(--background-color-box);
   border-right: 1px solid var(--background-color-box);
   border-bottom: 1px solid var(--background-color-box);
