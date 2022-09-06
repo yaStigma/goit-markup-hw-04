@@ -143,7 +143,7 @@ img {
   color: var(--color-text-accent);
 }
 .link-cont {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   
@@ -178,7 +178,14 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.footer-cont {
+  display: flex; 
+align-items: baseline;
+}
+.ftr-address-cont {
+  margin-right: 70px;
+  width: 230px;
+}
 .address {
   margin-top: 20px;
 }
@@ -201,6 +208,51 @@ img {
 .link-address:focus {
   color: var(--color-text-accent);
 }
+
+.ftr-social-cont {
+  width: 206px;
+}
+.ftr-social-title {
+   margin-bottom: 20px;
+
+   color: var(--color-text-hero);
+  font-weight: 700;
+font-size: 14px;
+  line-height: calc(14 / 16);
+  letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+.ftr-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content:center;
+}
+.ftr-link-social {
+  display: block;
+  fill: var(--color-text-hero);
+  text-decoration: none;
+    padding: 12px;
+    background-color: var(--background-color-social);
+    border-radius: 50%;
+    line-height: 0;
+}
+.ftr-link-social:hover,
+.ftr-link-social:focus {
+  fill: var(--color-text-hero);
+  background-color: var(--background-color-bt-accent);
+}
+
+.icon-social {
+width: 20px;
+height: 20px;
+}
+
+
+
+
+
+
 /*studio*/
 
 /*section hero*/
